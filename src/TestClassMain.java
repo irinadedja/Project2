@@ -9,6 +9,7 @@ public class TestClassMain {
         System.setProperty("webdriver.chrome.driver","libs\\chromedriver.exe");
         WebDriver driver= new ChromeDriver();
         String baseUrl="https://www.facebook.com/";
+
         driver.get(baseUrl);
         WebElement login=driver.findElement(By.id("email"));
         login.sendKeys("User");
